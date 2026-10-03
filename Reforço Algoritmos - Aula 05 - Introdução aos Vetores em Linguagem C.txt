@@ -1,0 +1,17 @@
+Introdução aos Vetores em Linguagem C
+
+Um vetor (array) é uma estrutura de dados utilizada para armazenar vários valores do mesmo tipo em uma única variável, organizados sequencialmente na memória. 
+
+Diferentemente de uma variável comum, que armazena apenas um valor, como int idade = 20;, um vetor permite reservar um conjunto de posições, como int notas[5];, que cria espaço para armazenar cinco números inteiros. 
+
+Essas posições são alocadas de forma contígua na memória, ou seja, uma após a outra, e cada elemento pode ser acessado individualmente por meio de um índice, que em C sempre começa em 0. Assim, em um vetor de tamanho 5, as posições válidas são 0, 1, 2, 3 e 4, sendo notas[0] o primeiro elemento e notas[4] o último. 
+
+Como os elementos possuem o mesmo tipo, cada posição ocupa a mesma quantidade de memória; por exemplo, considerando um int de 4 bytes, int notas[5] normalmente reservará 20 bytes consecutivos. 
+
+Essa organização permite que o computador encontre rapidamente qualquer elemento do vetor a partir de sua posição. 
+
+Os vetores são especialmente úteis quando precisamos trabalhar com conjuntos de informações semelhantes, como notas de alunos, temperaturas registradas durante uma semana, idades, salários, códigos de produtos ou resultados de cálculos, evitando a necessidade de criar várias variáveis individuais. 
+
+Além disso, vetores combinam muito bem com estruturas de repetição como for e while, permitindo carregar, consultar, alterar, somar, ordenar e percorrer grandes quantidades de dados de maneira simples e organizada. 
+
+É importante lembrar que a linguagem C não verifica automaticamente se o índice utilizado está dentro dos limites do vetor; acessar uma posição inexistente, como notas[5] em um vetor de cinco posições, pode acessar uma região de memória que não pertence ao vetor e causar resultados inesperados ou erros no programa.
